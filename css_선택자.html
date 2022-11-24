@@ -76,17 +76,17 @@
         <tr>
             <td>자손선택자</td>
             <td>부모자>자손자</td>
-            <td> </td>
+            <td>다이렉트 자손자에 한해서 설정가능</td>
         </tr>
 
     </table>
 
     <h2>예제</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit temporibus eius aliquam nisi numquam eos harum enim ullam mollitia nobis quisquam, expedita aliquid repudiandae saepe quae doloribus rerum consequuntur soluta.</div>
-    <div id="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, error minus? Molestias explicabo itaque nostrum cum fugiat sunt, ratione architecto eos, odit alias repudiandae aut quibusdam? Incidunt blanditiis aspernatur a.</div>
-    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ut et aperiam illum veritatis id consectetur quia autem. Alias omnis amet aut deleniti commodi placeat natus eligendi similique quidem necessitatibus.</div>
-    <div class="box red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus nemo alias ad illum quo hic quas harum suscipit, nulla exercitationem, saepe eligendi quos. Officiis, expedita. Harum nulla ea illum.</div>
-    <p class="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis pariatur dolorem necessitatibus unde ex eveniet itaque quasi aut excepturi, aperiam optio molestiae adipisci nam modi eos placeat. Sint, dignissimos vel?</p>
+    <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis expedita, aliquid quas et error placeat ut dolor quia natus qui eaque vel consequatur amet molestias tempore architecto, porro totam asperiores.</div>
+    <div id="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga quidem exercitationem harum eius quae minima asperiores quaerat, hic, molestiae dignissimos autem aut pariatur totam saepe possimus numquam ipsum itaque rerum!</div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus molestiae odit provident sapiente itaque in reprehenderit vel soluta distinctio numquam placeat error, aliquam commodi magni repellendus ex. Ab, adipisci fuga?</div>
+    <div class="box red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iure officiis. Quasi, culpa modi. Excepturi quo cupiditate id sit natus labore. Totam ad commodi eaque voluptas modi quis sed explicabo!</div>
+    <p class="red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum ab quasi at. Natus, voluptates ipsam repellendus eaque itaque placeat, ipsa, reiciendis sequi quaerat numquam tenetur maiores. Similique facilis suscipit voluptatum?</p>
     
     <div class="list">
         <ul>
@@ -98,21 +98,21 @@
             <li>menu4</li>
         </ul>
         <em>자손자에 대한 정의</em>
-
-
-
     </div>
 
 
+
     <style>
+        body {margin-bottom: 200px;}
         * {font-size: 18px;}
 
         h1 {font-size: 30px;}
-        /* 위에서 언급했던 내용을 아래에서 덮어쓰기 할수 있음 */
+        /* 위에서 언급했던 내용을 아래에서 
+        덮어쓰기 할수 있음 */
         h2 {font-size: 20px;}
-        div{margin-bottom: 20px;
+        div {margin-bottom: 20px;
             background-color: gray;
-            color: white;}
+        color:white;}
         #box {font-weight: bold;
             color: yellow;}
         .box {padding: 10px;}
@@ -120,22 +120,16 @@
         p.red {text-decoration: underline;}
 
 
-        .list em [fontsise 30px]
-        .list li{color blue }
-        .list ul { background-color: aquamarine;}
-
-
+        .list em { font-size: 30px;}
+        .list li {color: blue;}
+        .list ul {background-color: aquamarine;}
+    
         /* 자손자선택법 */
 
         .list>ul>li>em {font-style: normal;}
-        .list>em> {color: green;}
-
-
+        .list>em {color: green;}
     </style>
 
-
-
-
-
+    
 </body>
 </html>
