@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 언어설정 */
 
 @charset 'utf-8';
@@ -19,4 +20,27 @@
 
 .box3::after{content: "";
     clear: both;
+=======
+/* 언어설정 */
+
+@charset 'utf-8';
+
+/* 박스c 가로정렬 */
+.boxC::after {content: "";
+    clear: both;
+    display: block;}
+.boxC>.box1 {float: left; width: 50%;}
+.boxC>.box2 {float: left; width: 50%;}
+
+/* 박스 3-1, 3-2, 3-3의 가로정렬 */
+.box3-1 {float: left;
+    width: 33.3333%;}
+.box3-2 {float: left;
+    width: 33.3333%;}
+.box3-3 {float: left;
+    width: 33.3333%;}
+
+.box3::after{content: "";
+    clear: both;
+>>>>>>> 0afdc58056b9fd7cab08a47cb3b8a676c9a74f54
     display: block;}

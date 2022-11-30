@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 언어설정 */
 @charset "utf-8";
 
@@ -73,3 +74,80 @@
         display: block;}
 
 
+=======
+/* 언어설정 */
+@charset "utf-8";
+
+
+/* 박스1의 가로정렬
+.box1::after {content: "";
+    clear: both;
+    display: block;}
+.box1>.box1-1 {float: left;
+    width: 20%;}
+.box1>.box1-2 {float: left;
+    width: 80%;}
+
+
+.box2::after {content: "";
+    clear: both;
+    display: block;}
+.box2 {float: left;
+    width: 100%;}
+
+
+.box3::after {content: "";
+    clear: both;
+    display: block;}
+.box3>.box3-1 {float: left;
+    width: 33.3333%;}
+.box3>.box3-2 {float: left;
+    width: 33.3333%;}
+.box3>.box3-3 {float: left;
+    width: 33.3333%;}
+
+
+.box4::after {content: "";
+    clear: both;
+    display: block;}
+.box4>.boxa {float: left;
+    width: 20%;}
+.box4>.boxb {float: left;
+    width: 80%;} */
+
+
+/* 박스1과 박스2의 가로정렬 */
+
+.box1 {float: left;
+    width: 20%;}
+.box2 {float: left;
+    width: 80%;}
+.boxA ::after {content: "";
+        clear: both;
+        display: block;}
+
+
+/* 박스B설정 */
+
+/* 박스3과 박스4와 박스5의 가로정렬 */
+.box3 {float: left;
+    width: 33.3333%;}
+.box4 {float: left;
+    width: 33.3333%;}
+.box5 {float: left;
+    width: 33.3333%;}
+.boxC ::after {content: "";
+        clear: both;
+        display: block;}
+
+/* 박스6과 박스7의 가로정렬 */
+.box6 {float: left;
+        width: 20%;}
+.box7 {float: left;
+        width: 80%;}
+.boxD::after {content: "";
+        clear: both;
+        display: block;}
+
+
+>>>>>>> 0afdc58056b9fd7cab08a47cb3b8a676c9a74f54
