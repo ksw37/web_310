@@ -1,0 +1,384 @@
+/* 언어설정 */
+@charset "UTF-8";
+
+
+/* 구글폰트설정 */
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+/* 전체설정 */
+*{margin: 0;
+padding: 0;}
+
+ul {list-style: none;}
+
+a {text-decoration: none;
+    color: #000;}
+
+
+
+
+/* 기본css */
+/* 로고설정 */
+.logo {font-size: 30px;
+    font-weight: normal;
+    font-family: 'Paytone One', sans-serif;}
+
+
+
+.logo>a {color: #34210e;
+    text-decoration: none;}
+
+/* 메뉴설정 */
+
+.gnb>ul {display: flex;}
+.gnb>ul>li {width: auto;}
+.gnb>ul>li>a {display: block;
+        padding: 15px;
+        font-size: 14px;
+        color: #ddd;}
+
+.box2 {background-color:  #34210e;}
+
+
+
+/* 기사설정 */
+.story {}
+.story h2 {font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;}
+.story h3 {margin-top: 40px;
+    border-left: solid 10px  #34210e;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: ;}
+.story time {}
+.story img {width: 100%;
+    height: auto;
+    margin-top: 10px;}
+.story p {margin-top: 10px;
+    margin-bottom: 20px;}
+
+
+
+/* sns 설정 */
+.sns {margin-top: 40px;}
+.sns ul {display: flex;}
+.sns ul li {flex: 1;}
+.sns ul li a {display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    background-color: aquamarine;}
+
+.sns ul li:nth-child(1) a {background-color: #1da1f2;}
+.sns ul li:nth-child(2) a {background-color: #1877f2;}
+/* ↑ 백그라운드컬러=브랜드컬러 홈페이지 에서 복사 */
+.sns ul li:nth-child(3) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#405de6+0,833ab4+34,833ab4+34,e1306c+54,f56040+77,fcaf45+100 */
+    background: #405de6; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #405de6 0%, #833ab4 34%, #833ab4 34%, #e1306c 54%, #f56040 77%, #fcaf45 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #405de6 0%,#833ab4 34%,#833ab4 34%,#e1306c 54%,#f56040 77%,#fcaf45 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #405de6 0%,#833ab4 34%,#833ab4 34%,#e1306c 54%,#f56040 77%,#fcaf45 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#405de6', endColorstr='#fcaf45',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+/* ↑ 백그라운드컬러=브랜드컬러 홈페이지 에서 복사하는데
+그라디언트 효과 있음 ->얼티메이트css그라디언트제너레이터에서
+컬러를 누른후 브랜드컬러 복사한것을 컬러값에 붙여넣기 해서 그라디언트 만든후
+->프리뷰의 오리엔태이션에서 효과방향 설정 후
+->밑의 css복사 붙여넣기 */
+
+.sns ul li i {}
+
+
+
+
+
+/* 관련기사 설정 */
+.relation {margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(213, 198, 187);
+    }
+.relation h3 {padding: 5px 0;}
+.relation ul {}
+.relation ul::after {content: "";
+display: block;
+clear: both;}
+.relation ul li {float: left;
+    width: 25%;}
+.relation a {display: block;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;}
+.relation img {width: 100%;}
+.relation .text {}
+
+
+
+
+
+/* 사이드메뉴 */
+.sidemenu {margin-bottom: 30px;}
+.sidemenu h3 {color: #666;
+    font-size: 18px;
+margin-bottom: 10px;
+    border-bottom: #ddd dotted 2px;}
+.sidemenu ul {}
+.sidemenu ul>li {}
+.sidemenu li>a {display: block;
+    padding: 5px;
+font-size: 14px;}
+
+
+/* 추천기사 */
+.recommend {margin-bottom: 30px;}
+.recommend h3 {color: #666;
+    font-size: 18px;
+    margin-top: 20px;
+margin-bottom: 5px;
+    border-bottom: #ddd dotted 2px;}
+.recommend ul {}
+.recommend ul>li {}
+.recommend li>a {display: block;
+    padding: 0px;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 10px;}
+
+
+.recommend li a img {width: 100%;
+    height: auto;
+}
+
+.recommend .text {position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}
+
+
+/* 인기기사 */
+.popular {}
+.popular h3 {color: #666;
+    font-size: 18px;
+    margin-top: 20px;
+margin-bottom: 5px;
+    border-bottom: #ddd dotted 2px;}
+.popular ul {}
+.popular ul li {}
+.popular li a {
+    display: block;
+    padding: 5px;
+font-size: 14px;
+border-bottom: dotted 1px #ddd;}
+.popular li a::after {content: "";
+display: block;
+clear: both;}
+
+.popular img {float: left;
+    width: 60px;}
+.popular .text {float: none;
+    width: auto;
+margin-left: 60px;
+padding-left: 10px;}
+.popular span {display: block;
+    font-size: 12px;
+    color: #666;}
+
+
+
+
+/* 푸터설정 */
+.box5 {border-top: solid 1px #666;}
+.copyright {color: #666;
+    font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 박스간격설정 */
+/* 위아래간격 */
+
+
+
+/* 마진으로 간격설정 
+.box1 {margin-top: 8px;
+    margin-bottom: 8px;}
+
+.box3 {margin-top: 40px;
+    margin-bottom: 30px;}
+
+.box4 {margin-top: 40px;
+    margin-bottom: 30px;}
+
+.box5 {margin-top: 15px;
+    margin-bottom: 15px;}
+
+
+    
+
+.box1 {background-color: beige;}
+.box3 {background-color: aqua;}
+.box4 {background-color: aquamarine;}
+.box5 {background-color: #333;} 
+마진 패딩 차이 참고용 배경색
+
+*/
+
+
+
+
+
+/* 패딩으로간격설정 */
+
+
+.box1 {padding-top: 8px;
+    padding-bottom: 8px;}
+
+.box3 {padding-top: 30px;
+    padding-bottom: 40px;}
+
+.box4 {padding-top: 30px;
+    padding-bottom: 40px;}
+
+.box5 {padding-top: 15px;
+    padding-bottom: 15px;}
+
+
+
+/* 좌우간격설정 */
+.box1, .box2, .boxA, .box5 {
+    padding-left: 10px;
+    padding-right: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리구간################################## */
+
+/* 모바일구간 */
+/* 599px 이하일때**************** */
+@media (max-width: 599px) {
+
+
+
+/* sns설정 */
+.sns span {display: none;}
+
+
+
+/* 관련기사 */
+.relation ul li {float: left;
+    width: 50%;}
+
+.relation ul li:nth-child(odd) {clear: both;}
+
+
+
+}
+
+
+
+
+
+
+
+/* 모바일구간2 */
+/* 600px 이상 767px 이하일때******* */
+@media (min-width: 600px) and (max-width: 767px){
+
+
+
+/* 박스4-1과 박스4-2의 가로정렬 */
+.box4-1 {float: left;
+    width: 49%;}
+
+.box4-2 {float: right;
+    width: 49%;}
+
+.box4 a::after{content: "";
+    display: block;
+    clear: both;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿구간 */
+/* 768px이상일때################## */
+@media (min-width:768px){
+.box3 {width: 70%;
+    float: left;}
+.box4 {width: 30%;
+    float: left;}
+.boxA::after {content: "";
+        display: block;
+        clear: both;}
+
+.box3 {padding-right: 50px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;}
+
+
+}
+
+
+
+
+/* 웹구간 */
+/* 1280px이상일때############### */
+@media(min-width:1280px){
+
+.box1, .boxA, .gnb, .copyright {width: 1200px ;
+    margin: 0 auto;}
+
+
+}
+

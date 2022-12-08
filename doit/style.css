@@ -1,33 +1,34 @@
-<<<<<<< HEAD
 /* 언어설정 */
 @charset "UTF-8";
 
 /* 전체설정 */
-*{margin: 0; padding: 0;}
+* {margin: 0; padding: 0;}
 
-#wrap {display: flex;
+#wrap { display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-            /* flex-flow:row wrap */ /* =위의 두줄과 같은말(=한줄로 쓸수있음)*/
+            /*flex-flow:row wrap */
         width: 90%;
         /* margin: 0 5% 0 5%; */
-        margin: 0 auto;     /*화면중앙에배치=위의 0 5 0 5 와 같은말*/
-    }
+        margin: 0 auto; /*화면중앙에배치*/
 
+    }
 /* 헤더설정 */
 .header {
     display: flex;
     width: 100%;
     position: relative;
     justify-content: flex-end;
+
 }
 .header>h1 {
-    background-color:#ff6b57;
+    background-color: #ff6b57;
     width: 12.5%;
     height: 142px;
     position: absolute;
     left: 0;
     top: 0;
+
 }
 .header>nav {
     background-color: #ff6b57;
@@ -35,18 +36,16 @@
     height: 80px;
 }
 
-
 /* 슬라이더영역 */
 .slider_section {
     width: 50%;
     background-color: #3c90be;
     height: 440px;
 }
-
 /* 갤러리영역 */
+
 .gallery_section {background-color: #f8de73;
                 width: 27%;}
-
 
 /* 인기검색어영역 */
 .rankup_section {background-color: #00d2a5;
@@ -57,119 +56,26 @@
 .latest_post_section {background-color: #9cabe4;
                 width: 30%;
                 height: 270px;}
-
-
+                
 /* 인기글영역 */
-.popular_post_section {background-color: #976817;
+.popular_post_section {background-color: #d76817;
                 width: 30%;}
-
-
 /* 배너영역 */
 .banner_section {width: 23%;
                 display: flex;
             flex-direction: column;
             }
-
-
 .banner_section>div {flex: 1;}
 .banner_box_01 {background-color: #0175bb;}
 .banner_box_02 {background-color: #1261c9;}
 
+/* SNS 영역 */
 
-/* sns영역 */
-.social_section {background-color: #fe6eda;
+.social_section {background-color: #fe6fea;
                 width: 17%;}
-
 
 /* 푸터영역 */
 .footer {width: 100%;
         background-color: #474747;
-        height: 94px;}
-=======
-/* 언어설정 */
-@charset "UTF-8";
+    height: 94px;}
 
-/* 전체설정 */
-*{margin: 0; padding: 0;}
-
-#wrap {display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-            /* flex-flow:row wrap */ /* =위의 두줄과 같은말(=한줄로 쓸수있음)*/
-        width: 90%;
-        /* margin: 0 5% 0 5%; */
-        margin: 0 auto;     /*화면중앙에배치=위의 0 5 0 5 와 같은말*/
-    }
-
-/* 헤더설정 */
-.header {
-    display: flex;
-    width: 100%;
-    position: relative;
-    justify-content: flex-end;
-}
-.header>h1 {
-    background-color:#ff6b57;
-    width: 12.5%;
-    height: 142px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.header>nav {
-    background-color: #ff6b57;
-    width: 87.5%;
-    height: 80px;
-}
-
-
-/* 슬라이더영역 */
-.slider_section {
-    width: 50%;
-    background-color: #3c90be;
-    height: 440px;
-}
-
-/* 갤러리영역 */
-.gallery_section {background-color: #f8de73;
-                width: 27%;}
-
-
-/* 인기검색어영역 */
-.rankup_section {background-color: #00d2a5;
-                width: 23%;}
-
-
-/* 최신글영역 */
-.latest_post_section {background-color: #9cabe4;
-                width: 30%;
-                height: 270px;}
-
-
-/* 인기글영역 */
-.popular_post_section {background-color: #976817;
-                width: 30%;}
-
-
-/* 배너영역 */
-.banner_section {width: 23%;
-                display: flex;
-            flex-direction: column;
-            }
-
-
-.banner_section>div {flex: 1;}
-.banner_box_01 {background-color: #0175bb;}
-.banner_box_02 {background-color: #1261c9;}
-
-
-/* sns영역 */
-.social_section {background-color: #fe6eda;
-                width: 17%;}
-
-
-/* 푸터영역 */
-.footer {width: 100%;
-        background-color: #474747;
-        height: 94px;}
->>>>>>> 0afdc58056b9fd7cab08a47cb3b8a676c9a74f54
