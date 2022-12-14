@@ -1,0 +1,272 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+
+ul {list-style: none;}
+
+a {text-decoration: none;
+    color: #888;}
+
+img {border: none;
+    vertical-align: bottom;}
+
+
+html {scroll-behavior: smooth;}
+
+
+
+
+
+/* 전체화면설정 */
+.wrapper {  width: 1200px;
+    margin: 0 auto;}
+section h2 {text-align: center;
+        font-family: Impact, sans-serif;
+    font-size: 80px;
+    font-weight: normal;}
+section{
+        padding: 7em 0;} 
+section .wrapper {padding: 4em 1em}
+#about {background-color: transparent;
+     height: 100vh;}    /* vh=화면을 기준으로 너는 위아래 화면으로 맞춰져라 */
+#news {background-color: #ccc;
+    clip-path: polygon(0 0 , 100% 10%, 100% 90%, 0 100%);
+    background: linear-gradient( 50deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );}
+#speakers {background-color: transparent;}
+#ticket {background-color: #aaa;
+    height: 100vh;   /* vh=화면을 기준으로 너는 위아래 화면으로 맞춰져라 */
+    clip-path: polygon(0 0 , 100% 10%, 100% 100%, 0 100%);
+    background: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );}
+
+
+
+
+
+/* 헤더설정 */
+header {background-color: #333;
+    width: 100%;
+    padding: 16px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;}
+
+header .wrapper {display: flex;
+    justify-content: space-between;}
+
+header .logo {display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;}
+
+
+nav ul {display: flex;}
+nav li {}
+nav li a {display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;}
+
+
+
+
+
+
+
+
+
+/* 메인이미지설정 */
+.mainImg {text-align: center;
+    /*height: 1200px; 임의설정*/ 
+    height: 100vh;
+    background-color: #4db1ec; /*컬러를 먼저 쓰고 이미지를 써야 위로 써짐*/
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen; /*블랜드모드 - 뒷배경의 색상과 어우러지는*/
+    display: flex;
+    align-items: center;
+    animation: bg 24s infinite normal; /*얼터네이트 안쓸거라 노멀 안써도 되는데 기본값 써줌*/
+}
+
+.mainImg {width: 100%;
+            clip-path: polygon(0 0 , 100% 0, 100% 90%, 0 100%)}
+
+
+
+
+            
+/* 애니메이션설정 */
+
+@keyframes boldh3{ /* boldh3=작명*/
+
+    0% {font-weight: bold;
+        font-size: 20px;}
+    100% {font-weight: normal;
+        font-size: 60px;}
+}
+
+
+@keyframes bg {
+
+    0% {background-color: #4db1ec;}
+    12.5% {background-color: #1665cc;}
+    25% {background-color: #b473bf;}
+    37.5% {background-color: #ffb2c1;}
+    50% {background-color: #ff9f67;}
+    62.5% {background-color: #ffd673;}
+    75% {background-color: #a2e29b;}
+    87.5% {background-color: #00a2af;}
+    100% {background-color:#4db1ec ;}
+
+}
+
+
+/* 
+.mainImg h3 {font-weight: bold;
+        font-size: 20px;               /*위의 0%와 같이 해줘야 깜빡거림 없이 자연스러움
+        animation: boldh3 3s infinite alternate;     /*인피니트-무한대로, 얼터네이트-반대로(커졌다 작아졋다)
+    } 
+ */
+
+.mainImg h3 {text-align: center;
+    font-family: Impact, sans-serif;
+font-size: 100px;}
+
+.mainImg .wrapper {display: block;
+            width: 1000px;}
+
+.mainImg .wrapper .pp {font-size: 60px;
+        font-weight: bold;
+        font-family: Impact, sans-serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 30px 0;
+        border-top: solid 3px black;
+        border-bottom: solid 3px black;}
+
+.mainImg .wrapper p {font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.7;}
+
+
+
+
+
+
+
+ /* about 설정 */
+#about h2 {background: linear-gradient( 0deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+            -webkit-background-clip: text;            /*   => 나 글씨에다가 내용물을 입힐거야 */
+             -webkit-text-fill-color: transparent;}   /*  그런데 글씨에 색깔이 입혀있기 때문에 투명으로 바꿔줌 (최신 기술이라 밴더픽스(-webkit)써줌) */
+#about .wrapper {display: block;
+            position: relative;
+            width: 900px;}
+#about p {font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 20px;}
+#about img {display: inline-block;
+            width: 100%;}
+
+
+
+/* news 설정 */
+#news h2 {color: #fff;}
+#news ul {
+        width: 80%;
+        margin: 0 auto ;}
+#news li {}
+#news li a {display: block;
+    padding: 20px ;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    color: #fff;}
+    #news li a:hover {background-color: #fff;
+        color: #00a2af;}
+#news li span {margin-right: 10px;
+        width: 180px;
+        display: inline-block;}
+
+
+
+
+
+
+
+/* speakers 설정 */
+#speakers h2 {background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;}
+
+#speakers .wrapper>div {display: flex;
+        margin-bottom: 20px;}
+
+
+#speakers .txt {width: 80%;
+        order: 2;
+        padding: 10px 40px;}
+
+#speakers img {width:20%;
+        order: 1;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        transition: all 0.5s;}
+
+    #speakers .wrapper>div:hover img {
+            border: 1px solid #fff;
+            padding: 10px;
+            box-sizing: border-box;
+             filter: blur(5px);  /*번짐의 정도 - 픽셀값이 높을수록 더 번짐 */
+    }
+
+
+
+
+
+
+
+/* ticket 설정 */
+#ticket h2 {color: #fff;}
+#ticket form {width: 500px;
+        margin: 0 auto;}
+#ticket label {color: #fff;
+        margin-bottom: 0.5em;}
+#ticket .ticket {width: 100%;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.6); /*반투명하게(0.6)*/
+        border: none;
+        font-size: 18px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        }
+        #ticket .ticket:focus {outline: none;}
+#ticket .btn {width: 100%;
+        padding: 1em;
+        font-size: 18px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 20px;
+        }
+        #ticket .btn:hover {background-color: #1665cc;}
+        
+
+
+
+
+/* 카피라이트 설정 */
+.copy {border-top: solid 1px rgba(255, 255, 255, 0.6);
+        margin-top: 80px;
+        padding-top: 40px;}
+
+.copy p {color: #fff;
+        text-align: center;}

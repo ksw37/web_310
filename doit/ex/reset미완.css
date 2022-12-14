@@ -83,6 +83,8 @@ font-size: 20px;
 padding: 0 50px;
 }
 
+.gnb>li>a:hover {font-weight: bold;}
+
 
 
 /* 슬라이더섹션영역 설정 */
@@ -92,7 +94,7 @@ padding: 0 50px;
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 700px;
+    height: auto;
     z-index: 20;
 }
 
@@ -124,10 +126,13 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
             flex-wrap: wrap;
             padding: 5px;}
 
-
 .gallery_list>li {padding: 5px;}
 
 .gallery_list>li>a {display: block;}
+
+.gallery_list>li>a:hover {filter: grayscale(100%);
+                            color: #333;    }
+
 
 .gallery_list figure {text-align: center;}
 
@@ -138,7 +143,9 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 
 
 
-/* 인기검색어영역 설정 */
+
+
+/* 인기검색어영역 (참고사이트) 설정 */
 .rankup_section {display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,13 +158,26 @@ span.next_btn {background-image: url(../img/slider_arrow.png);
 
 .rankup_section>.rankup_list {}
 
-.rankup_section>.rankup_list>li {}
+.rankup_section>.rankup_list>li {
+                        margin: 10px;
+                        background-image: url(../img/circle-right-regular.svg);
+                        background-repeat: no-repeat;
+                        background-size: 8%;
+                        background-position: left center;
+                        text-indent: 15px;}
 
 .rankup_list>li>a {display: block;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     color: #fff;}
+
+    .rankup_list>li a:hover {color: #333;}
+
+
+
+
+
 
 
 
@@ -574,7 +594,7 @@ position: absolute;}
 /* 웹구간 1140px 이상일때 ************************* */
 @media (min-width:1140px) {
 
-
+#wrap {max-width: 1200px;}
 
 
 

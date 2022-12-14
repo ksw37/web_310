@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>날짜기입하기</h1>
+<!-- 
+    <script>
+        let now = new Date();
+        let year = now.getFullYear()
+        let month = now.getMonth()+1 
+        let date = now.getDate();
+        let day = now.getDay();
+        let hours = now.getHours()
+        let minutes = now.getMinutes()
+        let seconds = now.getSeconds()
+// 소문자 대문자 표기 잘 봐야함
+
+
+
+        document.write(now+'<br>')
+        document.write(year+'년<br>')
+        document.write(month+'월<br>')  //자바스크립트는 숫자가 0부터 시작하기 때문에 이렇게 쓰면 11로 나옴(12월인데) 그래서 위에서 +1을 해줌
+        document.write(date+'일<br>')
+        document.write(day+'둘째날<br>')
+        document.write(hours+'시<br>')
+        document.write(minutes+'분<br>')
+        document.write(seconds+'초<br>')
+
+    </script> -->
+
+
+
+
+<div id="wrap">
+<h1>안녕하세요</h1>
+오늘은 <span></span> 년 <span></span> 월 <span></span> 일 입니다.
+
+<p>현재시간을 확인하려면 버튼을 클릭하세요</p>
+<button id="btn">시간확인</button>
+
+<style>
+#wrap {border: solid 2px ;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 0 ;}
+
+h1 {}
+
+p {}
+
+</style>
+
+</div>
+
+
+<script>
+// document.write('오늘은'+year+'년'+month+'월'+date+'일 입니다.')
+
+        let now = new Date();
+        let year = now.getFullYear()
+        let month = now.getMonth()+1 
+        let date = now.getDate();
+        let day = now.getDay();
+        let hours = now.getHours()
+        let minutes = now.getMinutes()
+        let seconds = now.getSeconds()
+        let ss = document.getElementsByTagName('span')
+
+
+        ss[0].innerHTML = year
+        ss[1].innerHTML = month
+        ss[2].innerHTML = date
+
+
+
+document.getElementById('btn').addEventListener('click',
+function(event){
+alert('현재시간은'+hours+'시'+minutes+'분'+seconds+'초 입니다.')
+    })
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

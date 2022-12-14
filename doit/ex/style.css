@@ -35,7 +35,7 @@
 /* 슬라이더설정 */
 .slider_section {background-color: rgb(243, 236, 144);
     width: 50%;
-    height: 440px;}
+    height: auto;}
 
 /* 갤러리설정 */
 .gallery_section {background-color: rgb(216, 211, 139);
