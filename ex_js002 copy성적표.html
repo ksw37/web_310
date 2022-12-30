@@ -50,7 +50,7 @@ flex-wrap: wrap; width: 100%;}
 </style>
 <body>
 
-    <h1>당신의성적표</h1>
+    <!-- <h1>당신의성적표</h1>
     <div class="table">
         <ul class="title">
             <li>국어</li>
@@ -60,59 +60,216 @@ flex-wrap: wrap; width: 100%;}
             <li>평균</li>
         </ul>
         <ul class="write">            
-            <li id="korea"></li>
-            <li id="math"></li>
-            <li id="english"></li>
-            <li id="add"></li>
+            <li onclick="korea()" id="korea"></li>
+            <li onclick="math()" id="math"></li>
+            <li onclick="english()" id="english"></li>
+            <li onclick="add()" id="add"></li>
+            <li onclick="avg()" id="avg"></li>
+        </ul>
+    </div>
+
+    <div id="result"></div> -->
+
+
+    <!-- 정답 -->
+    <h1>당신의성적표</h1>
+    <div class="table">
+        <ul class="title">
+            <li>국어</li>
+            <li>수학</li>
+            <li>영어</li>
+            <li>총점</li>
+            <li>평균</li>
+        </ul>
+        <ul class="write">
+            <li id="kor" onclick="kNum()"></li>
+            <li id="math" onclick="mNum()"></li>
+            <li id="eng" onclick="eNum()"></li>
+            <li id="add">00</li>
             <li id="avg"></li>
         </ul>
     </div>
 
     <div id="result"></div>
 
+
+
     <script>
+
+        // --------정답-------------
+
+//   let kor = document.getElementById('kor')
+//     , mat = document.getElementById('math')
+//     , eng = document.getElementById('eng')
+//     , addN = document.getElementById('add')
+//     , avg = document.getElementById('avg')
+//     , rabc = document.getElementById('abc')
+//     , ko
+//     , ma
+//     , en
+//     , ad
+//     , av;
+// // 변수 지정이 안끝났으면 , 로 쭉 이어주면 됌 (단  ; 사용 확인 잘할것)
+
+
+//     function kNum() {
+//     ko = Number(prompt('국어점수는?'));
+//     kor.innerHTML = ko;
+//     add()  //function(함수)안에서 add까지 지정해줘야 add에 표시 할수있음
+//     }
+    
+//     function mNum() {
+//     ma = Number(prompt('수학점수는?'));
+//     mat.innerHTML = ma;
+//     add()
+//     }
+
+//     function eNum() {
+//     en = Number(prompt('영어점수는?'));   //넘버= 이 질문에 표현하는 답을 숫자로 받아들여라(연산가능)
+//     eng.innerHTML = en;
+//     add()
+//     }
+
+
+
+//     function add() {
+    
+//         ad = ko + ma + en;
+//         addN.innerHTML = ad;
+//         av = Math.floor( ad / 3); //Math.floor는 소숫점 조절
+//         avg.innerHTML = av;
+//         }
+
+
         
-    let kor = 
-    let mat = Number;
-    let eng = Number;
 
-    let add = kor+mat+eng
-    let avg = (kor+mat+eng)/3;
+//         //함수 사용 예제 -----  abc클릭시 배경 색을 파랑으로 바꿔라 -> html상의 kNum을 abc로 변경해서 확인하기
+//     function abc(){   
+//     let wrap = document.querySelector('body') //body안의 abc를 작동해라
+//     wrap.style.background='blue'        
+//     }
 
-    if(avg >=90) {
-        document.write('당신은 A학점입니다.')
-    } else if( avg <90 && avg >= 80){
+
+
+
+// ---------다시해보기------------
+
+    let Rkor = document.getElementById('kor');
+    let Rmat = document.getElementById('math');
+    let Reng = document.getElementById('eng')
+    , addN = document.getElementById('add')
+    , avg = document.getElementById('avg');
+
+    
+    
+    function kNum(){
+    ko = Number(prompt('당신의 점수를 입력해주세요'))
+    Rkor.innerHTML= ko;  
+    add()
+    }
+
+    
+    function mNum(){
+    ma = Number (prompt('당신의 점수를 입력해주세요'))
+    Rmat.innerHTML = ma;
+    add()
+    }
+
+    
+    function eNum(){
+    en = Number (prompt('당신의 점수를 입력해주세요'))
+    Reng.innerHTML = en;
+    add()
+    }
+
+
+    function add() {
+    ad = ko + ma + en;
+    addN.innerHTML = ad;
+    // av = ad / 3;
+    av = Math.floor( ad / 3);
+    avg.innerHTML = av;
+    
+
+
+    if(av >=90) {
+        document.write ('당신은 A학점입니다.')
+    } else if( av <90 && av >= 80){
         document.write('당신은 B학점입니다.')
-    } else if( avg <80 && avg >= 70){
+    } else if( av <80 && av >= 70){
         document.write('당신은 C학점입니다.')
-    }else if( avg <70 && avg >= 60){
+    }else if( av <70 && av >= 60){
         document.write('당신은 D학점입니다.')
     }else {
         document.write('당신은 F학점입니다.')
     }
 
+}
 
-    // 자바스크립트 선택하기방법
-    let Rkor = document.getElementById('korea');
-    Rkor.innerHTML= kor;
+
+
+
+
+
+
+
+// ----------내가 한 ---------------
+    // let Rkor = document.getElementById('korea');
+    // let Rmat = document.getElementById('math');
+    // let Reng = document.getElementById('english');
+
+
     
-    let Rmat = document.getElementById('math')
-    Rmat.innerHTML= mat;
+    // document.getElementById('korea').addEventListener('click',
+    // function korea(){
+    // ko = Number(prompt('당신의 점수를 입력해주세요'))
+    // Rkor.innerHTML= ko;    
+    // })
 
-    let Reng = document.getElementById('english')
-    Reng.innerHTML= eng;
+    // document.getElementById('math').addEventListener('click',
+    // function math(){
+    // ma = Number (prompt('당신의 점수를 입력해주세요'))
+    // Rmat.innerHTML = ma;
+    // })
 
-    let Radd = document.getElementById('add')
-    Radd.innerHTML= add;
+    // document.getElementById('english').addEventListener('click',
+    // function english(){
+    // en = Number (prompt('당신의 점수를 입력해주세요'))
+    // Reng.innerHTML = en;
+    // })
 
-    let Ravg = document.getElementById('avg')
-    Ravg.innerHTML= avg;
+
+    // let RRkor = document.getElementById('ko');
+    // let RRmat = document.getElementById('ma');
+    // let RReng = document.getElementById('en');
+
+    
+    // let Radd = RRkor+RRmat+RReng
+    // let Ravg = (RRkor+RRmat+RReng)/3;
 
 
-    document.getElementById('write').addEventListener('click',
-function(event){
-prompt('당신의 점수를 입력해주세요.')
-    })
+
+    // let RRadd = document.getElementById('add')
+    // RRadd.innerHTML = Radd; 
+    // let RRavg = document.getElementById('avg')
+    // RRavg.innerHTML = Ravg; 
+    
+    
+
+    // if(avg >=90) {
+    //     document.write('당신은 A학점입니다.')
+    // } else if( avg <90 && avg >= 80){
+    //     document.write('당신은 B학점입니다.')
+    // } else if( avg <80 && avg >= 70){
+    //     document.write('당신은 C학점입니다.')
+    // }else if( avg <70 && avg >= 60){
+    //     document.write('당신은 D학점입니다.')
+    // }else {
+    //     document.write('당신은 F학점입니다.')
+    // }
+
+
+
 
     
     </script>
